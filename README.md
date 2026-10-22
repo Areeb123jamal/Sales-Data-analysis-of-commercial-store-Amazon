@@ -16,6 +16,17 @@ The notebook includes:
 
 The notebook's **saved outputs** show 59 rows and 23 original columns, with order dates from April through July 2019. Its saved output also reports total charged of $1,777.73 and average order value of $30.13. These are historical notebook outputs, not independently rerun or validated results; rerun the analysis against the intended source file before relying on them.
 
+## Local setup
+
+```bash
+python -m venv .venv
+# Activate the virtual environment for your operating system, then:
+python -m pip install -r requirements.txt
+jupyter notebook
+```
+
+The CSV/XLSX inputs noted below are not included, so supply a permitted dataset and update the notebook input path before running all cells.
+
 ## Reproducibility limitation
 The notebook reads from a Windows-local file path (`D:\\amazon_orders.xlsx`). That file is not included here, so a clean checkout cannot reproduce the notebook as-is. Update the input path or add a properly licensed, anonymized sample dataset before rerunning.
 
